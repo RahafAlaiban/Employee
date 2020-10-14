@@ -3,7 +3,7 @@ public class Manager extends Employee {
 
    public Manager(String name, int id, String department, double salary, double bonus){
        super(name, id, department, salary);
-       this.bonus=bonus;
+      
    }
 
     public double getBonus() {
