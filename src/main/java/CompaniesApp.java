@@ -1,4 +1,6 @@
 import java.sql.SQLOutput;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.*;
 import java.util.function.Consumer;
 import java.util.function.Predicate;
@@ -27,9 +29,23 @@ public class CompaniesApp {
         letters=letters(letters);
         System.out.println(number + " "+ letters);
 
+Date date = new Date();
+        System.out.println("Date is :"+date);
+        LocalDate localDate = LocalDate.now();
+        System.out.println("Local Date is :"+ localDate);
+
+        LocalDate inputDate = LocalDate.of(2012,1,2);
+        System.out.println(inputDate);
+
+        int date2 = 20201101;
+        String asString = String.valueOf(date2);
+        LocalDate ld = LocalDate.parse(asString,DateTimeFormatter.BASIC_ISO_DATE);
+        System.out.println(ld);
 
 
-
+        String Date ="2020-11-18";
+        LocalDate localDate1 = LocalDate.parse(Date);
+        System.out.println(localDate1);
         int num = 4;
         System.out.println("Number is "+ newNumber(num));
       Company company;
